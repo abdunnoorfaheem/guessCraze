@@ -15,54 +15,142 @@
     <link rel="stylesheet" href="src/output.css" />
   </head>
   <body>
-    <!-- screenOne start -->
+    <!-- screenOne start  [name]-->
     <section class="" id="screenOne">
       <div class="max-w-[1320px] m-auto">
-        <div class="bg-[#F5F5F5] p-[100px] text-center font-poppins  max-w-[750px] m-auto my-[10%] rounded-[10px]">
-            <h3 class="lg:text-[48px] text-[24px] font-bold">Wanna Play game?</h3>
-            <input type="text" placeholder="Your Name" id="inputOneName" class="lg:px-[52px] lg:py-[22px] px-[22px] py-[11px] border-2 border-[#D9D9D9] rounded-[79px] lg:my-[20px] my-[10px] block m-auto lg:text-[32px] text-[16px] font-bold text-[#D9D9D9]">
-            <button id="btnOne" class="bg-[#7041D3] text-[#FFFFFF] lg:text-[32px] text-[16px] font-bold px-[87px] py-[15px] rounded-[53px] mt-[36px] mb-[55px]">Start Game</button>
-            <p id="nameError" class="hidden lg:text-[48px] text-[24px] font-bold bg-[#CC3030] text-white  py-[9px] rounded-[5px]">Name Is Missing</p>
+        <div
+          class="bg-[#F5F5F5] p-[100px] text-center font-poppins max-w-[750px] m-auto my-[10%] rounded-[10px]"
+        >
+          <h3 class="lg:text-[48px] text-[24px] font-bold">Wanna Play game?</h3>
+          <input
+            type="text"
+            placeholder="Your Name"
+            id="inputOneName"
+            class="lg:px-[52px] lg:py-[22px] px-[22px] py-[11px] border-2 border-[#D9D9D9] rounded-[79px] lg:my-[20px] my-[10px] block m-auto lg:text-[32px] text-[16px] font-bold text-[#D9D9D9]"
+          />
+          <button
+            id="btnOne"
+            class="bg-[#7041D3] text-[#FFFFFF] lg:text-[32px] text-[16px] font-bold px-[87px] py-[15px] rounded-[53px] mt-[36px] mb-[55px]"
+          >
+            Start Game
+          </button>
+          <p
+            id="nameError"
+            class="hidden lg:text-[48px] text-[24px] font-bold bg-[#CC3030] text-white py-[9px] rounded-[5px]"
+          >
+            Name Is Missing
+          </p>
         </div>
       </div>
     </section>
     <!-- screenOne end -->
-    <!-- screenTwo start -->
+    <!-- screenTwo start [number]-->
     <section class="hidden" id="screenTwo">
       <div class="max-w-[1320px] m-auto">
-        <div class="bg-[#F5F5F5] p-[100px] text-center font-poppins  max-w-[750px] m-auto my-[10%] rounded-[10px]">
-            <h3 class="lg:text-[48px] text-[24px] font-bold">Player - 1</h3>
-            <input type="text" placeholder="Give a number" id="inputTwoNumber" class="lg:px-[52px] lg:py-[22px] px-[22px] py-[11px] border-2 border-[#D9D9D9] rounded-[79px] lg:my-[20px] my-[10px] block m-auto lg:text-[32px] text-[16px] font-bold text-[#D9D9D9]">
-            <button id="btnTwo" class="bg-[#7041D3] text-[#FFFFFF] lg:text-[32px] text-[16px] font-bold px-[87px] py-[15px] rounded-[53px] mt-[36px] mb-[55px]">Let’s Play</button>
-            <p id="numberErrorPOne" class="hidden lg:text-[48px] text-[24px] font-bold bg-[#CC3030] text-white  py-[9px] rounded-[5px]">Please give a number</p>
+        <div
+          class="bg-[#F5F5F5] p-[100px] text-center font-poppins max-w-[750px] m-auto my-[10%] rounded-[10px]"
+        >
+          <h3 class="lg:text-[48px] text-[24px] font-bold">Player - 1</h3>
+          <input
+            type="number"
+            placeholder="Give a number"
+            id="inputTwoNumber"
+            class="lg:px-[52px] lg:py-[22px] px-[22px] py-[11px] border-2 border-[#D9D9D9] rounded-[79px] lg:my-[20px] my-[10px] block m-auto lg:text-[32px] text-[16px] font-bold text-[#D9D9D9]"
+          />
+          <button
+            id="btnTwo"
+            class="bg-[#7041D3] text-[#FFFFFF] lg:text-[32px] text-[16px] font-bold px-[87px] py-[15px] rounded-[53px] mt-[36px] mb-[55px]"
+          >
+            Let’s Play
+          </button>
+          <p
+            id="numberErrorPOne"
+            class="hidden lg:text-[48px] text-[24px] font-bold bg-[#CC3030] text-white py-[9px] rounded-[5px]"
+          >
+            Please give a number
+          </p>
         </div>
       </div>
     </section>
     <!-- screenTwo end -->
-    <!-- screenThree start -->
+    <!-- screenThree start [name] -->
     <section class="hidden" id="screenThree">
       <div class="max-w-[1320px] m-auto">
-        <div class="bg-[#F5F5F5] p-[100px] text-center font-poppins  max-w-[750px] m-auto my-[10%] rounded-[10px]">
-            <h3 class="lg:text-[48px] text-[24px] font-bold">Player - 2 Name</h3>
-            <input type="text" placeholder="What is your name" id="inputNamePTwo" class="lg:px-[52px] lg:py-[22px] px-[22px] py-[11px] border-2 border-[#D9D9D9] rounded-[79px] lg:my-[20px] my-[10px] block m-auto lg:text-[32px] text-[16px] font-bold text-[#D9D9D9]">
-            <button id="btnThree" class="bg-[#7041D3] text-[#FFFFFF] lg:text-[32px] text-[16px] font-bold px-[87px] py-[15px] rounded-[53px] mt-[36px] mb-[55px]">Start Game</button>
-            <p id="errorNameTwo" class="hidden lg:text-[48px] text-[24px] font-bold bg-[#CC3030] text-white  py-[9px] rounded-[5px]">Please give a Name</p>
+        <div
+          class="bg-[#F5F5F5] p-[100px] text-center font-poppins max-w-[750px] m-auto my-[10%] rounded-[10px]"
+        >
+          <h3 class="lg:text-[48px] text-[24px] font-bold">Player - 2 Name</h3>
+          <input
+            type="text"
+            placeholder="What is your name"
+            id="inputNamePTwo"
+            class="lg:px-[52px] lg:py-[22px] px-[22px] py-[11px] border-2 border-[#D9D9D9] rounded-[79px] lg:my-[20px] my-[10px] block m-auto lg:text-[32px] text-[16px] font-bold text-[#D9D9D9]"
+          />
+          <button
+            id="btnThree"
+            class="bg-[#7041D3] text-[#FFFFFF] lg:text-[32px] text-[16px] font-bold px-[87px] py-[15px] rounded-[53px] mt-[36px] mb-[55px]"
+          >
+            Start Game
+          </button>
+          <p
+            id="errorNameTwo"
+            class="hidden lg:text-[48px] text-[24px] font-bold bg-[#CC3030] text-white py-[9px] rounded-[5px]"
+          >
+            Please give a Name
+          </p>
         </div>
       </div>
     </section>
     <!-- screenThree end -->
-    <!-- screenFour start -->
+    <!-- screenFour start [number]-->
     <section class="hidden" id="screenFour">
       <div class="max-w-[1320px] m-auto">
-        <div class="bg-[#F5F5F5] p-[100px] text-center font-poppins  max-w-[750px] m-auto my-[10%] rounded-[10px]">
-            <h3 class="lg:text-[48px] text-[24px] font-bold">Player - 2</h3>
-            <input type="text" placeholder="Guess a number" id="inputTwoGuess" class="lg:px-[52px] lg:py-[22px] px-[22px] py-[11px] border-2 border-[#D9D9D9] rounded-[79px] lg:my-[20px] my-[10px] block m-auto lg:text-[32px] text-[16px] font-bold text-[#D9D9D9]">
-            <button id="" class="bg-[#7041D3] text-[#FFFFFF] lg:text-[32px] text-[16px] font-bold px-[87px] py-[15px] rounded-[53px] mt-[36px] mb-[55px]">Guess</button>
-            <p id="guessErrorPTwo" class="hidden lg:text-[48px] text-[24px] font-bold bg-[#CC3030] text-white  py-[9px] rounded-[5px]">Please give a Guess</p>
+        <div
+          class="bg-[#F5F5F5] p-[100px] text-center font-poppins max-w-[750px] m-auto my-[10%] rounded-[10px]"
+        >
+          <h3 class="lg:text-[48px] text-[24px] font-bold">Player - 2</h3>
+          <input
+            type="number"
+            placeholder="Guess a number"
+            id="inputTwoGuess"
+            class="lg:px-[52px] lg:py-[22px] px-[22px] py-[11px] border-2 border-[#D9D9D9] rounded-[79px] lg:my-[20px] my-[10px] block m-auto lg:text-[32px] text-[16px] font-bold text-[#D9D9D9]"
+          />
+          <button
+            id="btnFour"
+            class="bg-[#7041D3] text-[#FFFFFF] lg:text-[32px] text-[16px] font-bold px-[87px] py-[15px] rounded-[53px] mt-[36px] mb-[55px]"
+          >
+            Guess
+          </button>
+          <p
+            id="guessErrorPTwo"
+            class="hidden lg:text-[48px] text-[24px] font-bold bg-[#CC3030] text-white py-[9px] rounded-[5px]"
+          >
+            Please give a Number
+          </p>
         </div>
       </div>
     </section>
     <!-- screenFour end -->
-     <script src="js/script.js"></script>
+    <!-- screenFinal start -->
+    <section class="hidden" id="screenFinal">
+      <div class="max-w-[1320px] m-auto">
+        <div
+          class="bg-[#F5F5F5] p-[100px] text-center font-poppins max-w-[750px] m-auto my-[10%] rounded-[10px]"
+        >
+          <h3 class="lg:text-[48px] text-[24px] font-bold text-red-600">
+            Final Result
+          </h3>
+
+          <p
+            id="resultShow"
+            class="hidden lg:text-[48px] text-[24px] font-bold text-green-600 py-[9px] rounded-[5px]"
+          >
+            Win
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- screenFinal end -->
+    <script src="js/script.js"></script>
   </body>
 </html>

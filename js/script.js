@@ -1,6 +1,7 @@
 let btnOne=document.getElementById("btnOne");
 let btnTwo=document.getElementById("btnTwo");
 let btnThree=document.getElementById("btnThree");
+let btnFour=document.getElementById("btnFour");
 
 let inputOneName=document.getElementById("inputOneName");
 let inputNamePTwo=document.getElementById("inputNamePTwo");
@@ -10,14 +11,18 @@ let screenOne =document.getElementById("screenOne");
 let screenTwo =document.getElementById("screenTwo");
 let screenThree =document.getElementById("screenThree");
 let screenFour =document.getElementById("screenFour");
+let screenFinal =document.getElementById("screenFinal");
 
 let nameError=document.getElementById("nameError");
 let errorNameTwo=document.getElementById("errorNameTwo");
 let numberErrorPOne=document.getElementById("numberErrorPOne");
 let guessErrorPTwo=document.getElementById("guessErrorPTwo");
+let resultShow=document.getElementById("resultShow");
+// let guessErrorFinal=document.getElementById("guessErrorFinal");
+
 
 btnOne.addEventListener("click",()=>{
-    console.log(inputOneName.value);
+    // console.log(inputOneName.value);
 
     if(!inputOneName.value== ""){
            screenTwo.classList.remove("hidden");
@@ -42,7 +47,7 @@ btnTwo.addEventListener("click",()=>{
 });
 
 btnThree.addEventListener("click",()=>{
-  console.log(inputNamePTwo.value);
+//   console.log(inputNamePTwo.value);
 
   if(!inputNamePTwo.value==""){
    
@@ -52,4 +57,29 @@ btnThree.addEventListener("click",()=>{
   else{
      errorNameTwo.classList.remove("hidden");
   }
+});
+
+btnFour.addEventListener("click",()=>{
+     
+//    if(inputTwoGuess.value !==""){
+//     screenFinal.classList.remove("hidden");
+//     screenFour.classList.add("hidden");
+//    }else{
+//     guessErrorPTwo.classList.remove("hidden");
+//    }
+
+     if(inputTwoNumber.value == inputTwoGuess.value){
+        console.log("Player 2 Win");
+        screenFour.classList.add("hidden");
+        screenFinal.classList.remove("hidden");
+        resultShow.classList.remove("hidden");
+        resultShow.innerText="Player 2 Win";
+     }else{
+        console.log("Player 1 Win");
+        screenFour.classList.add("hidden");
+        screenFinal.classList.remove("hidden");
+        resultShow.classList.remove("hidden");
+        resultShow.innerText="Player 1 Win";
+     }
+   
 });
