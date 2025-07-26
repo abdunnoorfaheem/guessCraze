@@ -7,12 +7,11 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-yellow-100: oklch(97.3% 0.071 103.193);
-    --color-blue-300: oklch(80.9% 0.105 251.813);
-    --color-gray-300: oklch(87.2% 0.01 258.338);
-    --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-green-600: oklch(62.7% 0.194 149.214);
     --color-black: #000;
     --color-white: #fff;
+    --spacing: 0.25rem;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -171,11 +170,20 @@
   .my-\[10\%\] {
     margin-block: 10%;
   }
-  .my-\[20px\] {
-    margin-block: 20px;
+  .my-\[10px\] {
+    margin-block: 10px;
+  }
+  .mt-18 {
+    margin-top: calc(var(--spacing) * 18);
+  }
+  .mt-\[18px\] {
+    margin-top: 18px;
   }
   .mt-\[36px\] {
     margin-top: 36px;
+  }
+  .mb-\[26px\] {
+    margin-bottom: 26px;
   }
   .mb-\[55px\] {
     margin-bottom: 55px;
@@ -204,8 +212,17 @@
   .rounded-\[5px\] {
     border-radius: 5px;
   }
+  .rounded-\[9px\] {
+    border-radius: 9px;
+  }
   .rounded-\[10px\] {
     border-radius: 10px;
+  }
+  .rounded-\[39px\] {
+    border-radius: 39px;
+  }
+  .rounded-\[43px\] {
+    border-radius: 43px;
   }
   .rounded-\[53px\] {
     border-radius: 53px;
@@ -233,14 +250,35 @@
   .bg-\[\#F5F5F5\] {
     background-color: #F5F5F5;
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .p-\[100px\] {
     padding: 100px;
   }
-  .px-\[26px\] {
-    padding-inline: 26px;
+  .px-\[2px\] {
+    padding-inline: 2px;
   }
-  .px-\[52px\] {
-    padding-inline: 52px;
+  .px-\[4px\] {
+    padding-inline: 4px;
+  }
+  .px-\[8px\] {
+    padding-inline: 8px;
+  }
+  .px-\[22px\] {
+    padding-inline: 22px;
+  }
+  .px-\[32px\] {
+    padding-inline: 32px;
+  }
+  .px-\[42px\] {
+    padding-inline: 42px;
+  }
+  .px-\[43px\] {
+    padding-inline: 43px;
+  }
+  .px-\[82px\] {
+    padding-inline: 82px;
   }
   .px-\[87px\] {
     padding-inline: 87px;
@@ -248,14 +286,14 @@
   .py-\[9px\] {
     padding-block: 9px;
   }
+  .py-\[10px\] {
+    padding-block: 10px;
+  }
   .py-\[11px\] {
     padding-block: 11px;
   }
   .py-\[15px\] {
     padding-block: 15px;
-  }
-  .py-\[22px\] {
-    padding-block: 22px;
   }
   .text-center {
     text-align: center;
@@ -263,17 +301,14 @@
   .font-poppins {
     font-family: var(--font-poppins);
   }
+  .text-\[14px\] {
+    font-size: 14px;
+  }
   .text-\[16px\] {
     font-size: 16px;
   }
   .text-\[24px\] {
     font-size: 24px;
-  }
-  .text-\[32px\] {
-    font-size: 32px;
-  }
-  .text-\[48px\] {
-    font-size: 48px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -285,6 +320,12 @@
   .text-\[\#FFFFFF\] {
     color: #FFFFFF;
   }
+  .text-green-600 {
+    color: var(--color-green-600);
+  }
+  .text-red-600 {
+    color: var(--color-red-600);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -295,9 +336,44 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .lg\:m-auto {
+    @media (width >= 64rem) {
+      margin: auto;
+    }
+  }
+  .lg\:my-\[20px\] {
+    @media (width >= 64rem) {
+      margin-block: 20px;
+    }
+  }
+  .lg\:mt-\[36px\] {
+    @media (width >= 64rem) {
+      margin-top: 36px;
+    }
+  }
+  .lg\:mb-\[55px\] {
+    @media (width >= 64rem) {
+      margin-bottom: 55px;
+    }
+  }
+  .lg\:rounded-\[79px\] {
+    @media (width >= 64rem) {
+      border-radius: 79px;
+    }
+  }
   .lg\:px-\[52px\] {
     @media (width >= 64rem) {
       padding-inline: 52px;
+    }
+  }
+  .lg\:px-\[87px\] {
+    @media (width >= 64rem) {
+      padding-inline: 87px;
+    }
+  }
+  .lg\:py-\[15px\] {
+    @media (width >= 64rem) {
+      padding-block: 15px;
     }
   }
   .lg\:py-\[22px\] {
